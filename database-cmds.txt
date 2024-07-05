@@ -1,0 +1,31 @@
+The following sql commands are used to setup the database
+from which text information is widthdrawn and into which
+the updated n_times_summarized values are written. n_times_summarized
+reflects how often a summarization for a particular text has been
+submitted, so the chance for are particular text to be shown on the
+page upon opening the page can be negatively weighted. Thus, texts that
+haven't been summarized so often have a greater chance of being displayed,
+and thus, being summarized.
+
+
+
+## INIT DATABASE:
+
+CREATE TABLE IF NOT EXISTS text_infos (
+id SERIAL PRIMARY KEY,
+file_name VARCHAR(255) UNIQUE,
+headline VARCHAR(255),
+target_length INTEGER,
+n_times_summarized INTEGER);
+
+
+
+## INSER ROWS:
+
+INSERT INTO text_infos (file_name, headline, target_length, n_times_summarized)
+VALUES
+('ABBA.txt', 'Text: ABBA', 180, 0),
+('Buch.txt', 'Text: Buch', 225, 0),
+('Chor.txt', 'Text: Chor', 150, 0),
+('Faultier.txt', 'Text: Faultier', 280, 0),
+('Globus.txt', 'Text: Globus', 180, 0);

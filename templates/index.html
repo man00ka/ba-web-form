@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            padding-left: 10%;
+            padding-right: 10%;
+            /* height: 200vh;*/ /*remove fixed hight to adjust to content dynamically*/ 
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4fdff;
+            font-family: 'Times', sans-serif; /* Changing font family */
+            color: #005774; /* Changing font color */
+        }
+
+        .container-blank {
+            /*width: 80%;*/
+            max-width: 800px;
+            text-align: justify;
+            /*padding: 20px;*/
+            background-color: #f4fdff;
+        }
+
+        .container {
+            /*width: 80%; /* Set the width of the container */
+            max-width: 800px; /* Set maximum width if needed */
+            text-align: justify; /* Center-align the content */
+            padding: 20px; /* Add some padding */
+            border: 1px solid #ccc; /* Add a border for visual separation */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            background-color: #ffffff; /* Add a background color */
+        }
+
+        .task-container {
+            height: 400px;
+            margin-bottom: 10px; /* Add some margin to separate from the button */
+            position: relative; /* Position relative for absolute positioning */
+        }
+
+        .task-container pre {
+            height: 300px;
+            margin-bottom: 10px; /* Add some margin to separate from the button */
+            white-space: pre-wrap;
+            overflow-y: auto; /* Enable vertical scrolling */
+            position: relative; /* Position relative for absolute positioning */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        pre {
+             white-space: pre-wrap;       /* css-3 */
+             white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+             white-space: -pre-wrap;      /* Opera 4-6 */
+             white-space: -o-pre-wrap;    /* Opera 7 */
+             word-wrap: break-word;       /* Internet Explorer 5.5+ */
+        }
+
+        /* Gradient overlay */
+        .gradient-overlay {
+            content: "";
+            position: relativee;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px; /* Height of the gradient overlay */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        }
+
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #005774;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003a4e;
+        }
+
+        .button-copy {
+            padding: 10px 20px;
+            border: none;
+            background-color: #005774;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button-copy:hover {
+            background-color: #003a4e;
+        }
+
+        .text-box-mustard {
+            background-color: #fbd932;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .text-box-red {
+            background-color: #ff8173;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .text-box-italic {
+            font-style: italic;
+        }
+
+
+
+        .indentation {
+            padding-left: 20px;
+        }
+
+        /* Style for the separating line */
+        hr {
+            margin: 0px 0; /* Adjust margin as needed */
+            border: none;
+            border-top: 2px solid #ccc; /* Specify border style */
+        }
+
+        /* Style for the spacer */
+        .spacer {
+            height: 20px; /* Specify the height of the spacer */
+        }
+
+        .spacer-small {
+            height: 10px;
+        }
+
+        .spacer-large {
+            height: 30px;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="container-blank">
+        <h1>Willkommen!</h1> 
+        <div style="float:right;margin:20px;">
+            <img src="/static/images/ich.jpeg" alt="Emanuel Kirsch" width="150">
+        </div>
+        <div class="container">
+            <p>Liebe Teilnehmende,</p>
+            <p>zunächst einmal vielen Dank, dass Sie sich die Zeit nehmen möchten, mich durch die Bearbeitung dieses Formulars bei meiner Bachelorarbeit zu unterstüzten!</p>
+            <p>Aktuell arbeite ich an meiner Bachelorarbeit und zur Beantwortung meiner Forschungsfrage sollen unter anderem Textproduktionen aus verschiedenen Quellen analysiert werden. Dafür würde ich Sie bitten, mittellange Quelltexte (etwa 200 - 250 Wörter) in einem für <b>Kinder verständlichen Stil</b> zusammenzufassen. </p>
+
+          
+
+            <div class="spacer-large"></div>
+            <div class="spacer"></div>
+            <div></div>
+            <hr>
+            <div class="spacer-small"></div>
+
+            <h2>Bevor es losgeht</h2>
+            <p>Nehmen Sie sich bitte kurz Zeit, um die folgenden Aspekte zu verinnerlichen.</p>
+            <div class="spacer-small"></div>
+            <h3>Anforderungen</h3>
+            <p>An die Zusammenfassung gibt es <strong>bestimmte Anforderungen</strong> </p>
+            <div class="indentation">
+                <ul>
+                    <li><strong><u>Stil:</u></strong><i>Kindgerecht.</i> Die Texte sollen für Kinder verständlich sein (denken Sie an ein Lexikon für Kinder). <b>Aber:</b> Keine direkte Ansprache wie <i>"Liebe Kinder, ihr habt bestimmt schonmal gehort..."</i>. <b>Außerdem:</b> Sachlich und objektiv.</li>
+                    <li><strong><u>Textgattung:</u></strong> <i>Sachtext</i> um zu erfahren, worum es bei einem Thema überhaupt geht.</li>
+                    <li><strong><u>Länge:</u></strong> Damit Sie eine Vorstellung haben, steht bei jedem Text die ungefähr erwartete Länge der Zusammenfassung dabei. Auf ein paar Sätze mehr oder weniger kommt es aber nicht an. <i>Wenn Sie das Gefühl haben, bereits alles Wichtige zusammengefasst zu haben, hören Sie auf.</i></li>
+                </ul>
+                <p><strong>Kindergerechter Schreibstil:</strong> </p>
+                
+                <div class="indentation">
+                    <p>Für einen kindgerechten Schreibstil gilt:</p>
+                    <ul>
+                        <li><strong>Die Lebenswelt von Kindern berücksichtigen:</strong> Beispielsweise fahren Kinder im Auto mit und erleben Autos im Alltag, kennen aber nicht die Sicht hinter dem Steuer. </li>
+                        <li><strong><u>Vereinfachung:</u></strong> "Kindgerecht" bedeutet auch zu vereinfachen. Der Text muss dabei aber korrekt bleiben. <u>"Korrekt" bedeutet jedoch nicht "vollständig"</u>. Konzentrieren Sie sich auf das, was für Kinder nachvollziehbar ist und interessant sein könnte. </li>
+                        <li><strong><u>Weitere Hinweise:</u></strong> </li>
+                    </ul>
+                    <table border=1 style="background-color: #d4e0f1; color: #005774;
+                    text-align: left;">
+                        <tr> 
+                            <th></th>
+                            <th> <strong>Beispiel</strong> </th>
+                            <th> <strong>Anmerkung</strong> </th>
+                        </tr>
+                        <tr>
+                            <td> <strong>Nur eine Information pro Satz</strong> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> <strong>Verständlichkeit</strong> </td>
+                            <td>
+                                <ul>
+                                    <li>Angemessene Wörter</li>
+                                    <li>Keine komplizierten Sätze</li>
+                                    <li>Klare Gliederung</li>
+                                </ul>
+                            </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> <strong>Lange Zusammensetzungen vermeiden, ggf. Genitivkonstruktionen verwenden</strong> </td>
+                            <td>Nicht so gut: 
+                                <i>Kindernachrichtensendung</i><br>
+                                Besser: 
+                                <i>Nachrichtensendung für Kinder</i></td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> <strong>Zeit- und Ortsunabhängigkeit</strong> </td>
+                            <td>Falsch: <i>"In unserem Land...", "In den letzten Jahren...".</i> </td>
+                            <td>Für Kinder kann bereits ein Jahr ein sehr langer Zeitraum sein.</td>
+                        </tr>
+                        <tr>
+                            <td> <strong>Fremdwörter und "schwierige" Begriffe erklären</strong> </td>
+                            <td> <ul>
+                                <li><i>Empathie</i> bedeutet Einfühlungsvermögen.</li>
+                                <li>Jemand hat <i>Vorrechte</i>, er darf etwas, was andere nicht dürfen.</li>
+                            </ul> 
+                             </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sprechweise ausschreiben</strong></td>
+                            <td><i>"Ein Aerosol, sprich: Ärosool, ist ein Gas."</i><br><i>"'Science fiction', sprich: sseins-fiktschen."</i> </td>
+                            <td>Eigennamen wie Songtitel müssen Sie nicht übersetzen.</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Unter Umständen hilft es Ihnen vielleicht, sich in die <b>Rolle einer Lehrperson</b> an einer <b>Grundschule</b> zu versetzen, die einen Text für ihre Schüler vorbereitet.</p>
+
+                <p>Vielleicht sagt Ihnen auch die Kindernachrichtensendung "Logo" etwas.</p>
+            </div>
+
+            <div class="spacer"></div>
+
+            <h2>Stilistische Beispiele</h2>
+            
+            <p>So könnte ein entsprechender <b>Quelltext</b> beginnen:</p>
+            <div class="text-box-red">
+                <pre>"Der Adel (althochdeutsch adal oder edili ,Edles Geschlecht, die Edelsten', lateinisch nobilitas) ist eine "sozial exklusive Gruppe mit gesellschaftlichem Vorrang", die Herrschaft ausübt und diese in der Regel innerfamiliär tradiert.
+Eine Klarheit des Begriffs gibt es allerdings nicht und in den einzelnen europäischen Herrschaftsbereichen..."</pre>
+            </div>
+            
+            <p>Und so in etwa sollte eine <b>Zusammenfassung</b> davon klingen:</p>
+            <div class="text-box-mustard">
+                <pre>"Der Adel ist eine bestimmte Gruppe von Menschen.
+Wenn jemand adelig ist, sind normalerweise auch seine Kinder automatisch adelig.
+Ein Adeliger hat Vorrechte schon von seiner Geburt an, er darf etwas, was andere nicht dürfen.
+Früher besaß ein Adeliger nicht einfach nur Häuser oder Land, sondern war auch der Landesherr und durfte vieles bestimmen."</pre>
+            </div>
+            <div class="spacer"></div>
+            <hr>
+            <p>Vielen Dank schon einmal für Ihr Engagement! <b>Im nächsten Block finden Sie den Quelltext, den Sie zusammen fassen sollen</b>. Er wird bei jedem Aufruf der Seite zufällig aus einer Menge an Texten ausgewählt, bitte kopieren sie Ihn sich deshalb am Besten in einen Texteditor Ihrer Wahl. Dort können Sie auch die Zusammenfassung erstellen. Anschließend kopieren Sie den Text in das Eingabefeld am unteren Ende und klicken auf <b>"Submit"</b> </p>
+            <p>Ihre Eingabe ist anonym. Es werden meinerseits weder IP-Adresse noch sonstige Informationen gespeichert. Den Text erhalte ich direkt per E-Mail und verwende ihn lediglich zu Evaluationszwecken.</p>
+            <p>Für <b>Feedback</b> und eventuelle <b>Rückfragen</b> wenden Sie sich gerne an <a href="mailto:emanuel.kirsch@fau.de?subject=Rückfrage/Feedback zum Online-Formular">emanue.kirsch[at]fau.de</a></p>
+
+        </div>
+        <div class="spacer-large"></div>
+        <h2>{{ text_headline }}</h2>
+        <div class="container-blank">
+            <p>Der Text wird bei jedem Aufruf der Seite gewechselt. Nutzen Sie am Besten den Copy-Button und bearbeiten Sie den Text lokal bei sich auf dem Computer.</p>    
+        </div>    
+        
+        <div class="container task-container">
+            <pre>{{ text_description }}</pre>
+            <div class="gradient-overlay"></div>
+            <button onclick="copyTaskDescription()" class="button-copy">Copy</button>
+        </div>
+        
+        <p></p>
+        <div class="container">
+            <form action="/submit" method="post">
+                <p>Ziellänge ca. {{ target_length }} Wörter</p>
+                <p>(Sie können mit <a href="https://www.loremipsum.de/">www.loremipsum.de</a> einen Eindruck gewinnen, wie {{ target_length }} Wörter ungefähr aussehen.)</p>
+                <textarea name="text" rows="15" placeholder="Enter your text here"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function copyTaskDescription() {
+            var taskDescription = document.querySelector('.container.task-container pre').innerText;
+            navigator.clipboard.writeText(taskDescription)
+                .then(() => alert('Copied to clipboard!'))
+                .catch((error) => console.error('Error copying to clipboard: ', error));
+        }
+    </script>
+    
+</body>
+</html>

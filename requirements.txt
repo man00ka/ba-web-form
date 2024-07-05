@@ -1,0 +1,5 @@
+flask
+vercel
+numpy
+psycopg2-binary
+
